@@ -7,6 +7,7 @@
 #include <shader/Shader.h>
 #include <glm/gtc/type_ptr.hpp>
 #include <utility>
+#include <array>
 
 namespace black {
 

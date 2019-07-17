@@ -11,6 +11,8 @@
 #include <windows.h>
 #elif defined(BLACK_PLATFORM_LINUX)
 #include <dlfcn.h>
+#elif defined(BLACK_PLATFORM_MACOSX)
+#include <dlfcn.h>
 #endif
 
 #endif //BLACKENGINE_PLATFORMHEADERS_H

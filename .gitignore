@@ -1,6 +1,8 @@
 .idea/
 cmake-build-*/
 bin/*
+build/
+*.DS_Store
 
 src/core/Config.h
 src/core/Exported.h

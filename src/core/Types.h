@@ -14,6 +14,8 @@
 #include <plugins/windows/WindowsSharedLibrary.h>
 #elif defined(BLACK_PLATFORM_LINUX)
 #include <plugins/linux/LinuxSharedLibrary.h>
+#elif defined(BLACK_PLATFORM_MACOSX)
+#include <plugins/macos/MacSharedLibrary.h>
 
 #endif
 
@@ -23,7 +25,7 @@ using SharedLibrary = os::WindowsSharedLibrary;
 #elif defined(BLACK_PLATFORM_LINUX)
 using SharedLibrary = os::LinuxSharedLibrary;
 #elif defined(BLACK_PLATFORM_MACOSX)
-using SharedLibrary = os::MacOSSharedLibrary;
+using SharedLibrary = os::MacSharedLibrary;
 #endif
 
 /**
