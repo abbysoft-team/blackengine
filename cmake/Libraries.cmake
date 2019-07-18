@@ -15,7 +15,7 @@ if(UNIX)
 endif()
 
 if(UNIX AND APPLE)
-    set(LINKLIBS_LIBRARIES ${LINKLIBS_LIBRARIES} -framework Cocoa)
+        set(CMAKE_CXX_FLAGS  ${CMAKE_CXX_FLAGS} "-framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo")
 endif()
 
 list(APPEND LINKLIBS_SOURCES ${BLACKENGINE_LIBRARY_DIR}/glad/src/glad.c)
